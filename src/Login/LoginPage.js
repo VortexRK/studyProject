@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../Header/Header'
+import { placeholder } from '@babel/types'
 
 const styles = {
     form: {
@@ -21,9 +22,8 @@ function check(login, pass){
 }
 
 function LoginPage(){
-    const [value, setValue] = React.useState({login: '', password: ''});
-    let login;
-    let pass;
+    const [login, setLogin] = React.useState('');
+    const [pass, setPass] = React.useState('');
 
    return(
        <div>
@@ -32,9 +32,11 @@ function LoginPage(){
            </div>
            <div>
              <form style={styles.form}>
-               <input type='text' name='login' placeholder="login"/>
-               <input value={value.password} onChange={event => setValue(event.target.value)}/>
-               <button type='submit' onClick={() => check(value[0].login, value[0].password)}>submit</button>
+               <input value={login} onChange={event => setLogin(event.target.value)} placeholder="login"/>
+               <br/>
+               <br/>
+               <input value={pass} onChange={event => setPass(event.target.value)}/>
+               <button type='submit' onClick={() => check(login, pass)}>submit</button>
              </form>
            </div>
 

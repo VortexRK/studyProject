@@ -42,7 +42,7 @@ function ContactPage() {
   );
  
 }
-
+/*
 export default ContactPage
 
 import React from 'react';
@@ -157,4 +157,4 @@ export default function TemporaryDrawer() {
       </Drawer>
     </div>
   );
-}
+}*/
