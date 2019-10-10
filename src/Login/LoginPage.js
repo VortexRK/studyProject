@@ -9,10 +9,10 @@ const styles = {
     }
 }
 
-const loginPass = [ {id:1, login: 'Admin', pass: 'test1A'}]
+const user = [ {id:1, login: 'Admin', pass: 'test1A'}]
 
 function check(login, pass){
-    if(loginPass[0].login === login && loginPass[0].pass === pass){
+    if(user[0].login === login && user[0].pass === pass){
         window.alert('Successful!!!!!!!!!')
     }
     else {
