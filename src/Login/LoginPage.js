@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from '../Header/Header'
-import { placeholder } from '@babel/types'
 
 const styles = {
     form: {
@@ -13,7 +12,7 @@ const styles = {
 const loginPass = [ {id:1, login: 'Admin', pass: 'test1A'}]
 
 function check(login, pass){
-    if(loginPass[0].login===login && loginPass[0].pass===pass){
+    if(loginPass[0].login === login && loginPass[0].pass === pass){
         window.alert('Successful!!!!!!!!!')
     }
     else {
@@ -35,11 +34,11 @@ function LoginPage(){
                <input value={login} onChange={event => setLogin(event.target.value)} placeholder="login"/>
                <br/>
                <br/>
-               <input value={pass} onChange={event => setPass(event.target.value)}/>
+               <input value={pass} onChange={event => setPass(event.target.value)} placeholder="password" type='password' maxLength='15'/>
+               &nbsp;
                <button type='submit' onClick={() => check(login, pass)}>submit</button>
              </form>
            </div>
-
        </div>
    )
 }
