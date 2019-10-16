@@ -1,0 +1,29 @@
+.table {
+  margin: 7% auto 0;
+  border-collapse: collapse;
+  width: 50%;
+  border: 2px solid black;
+}
+.table tr:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.table tr {
+  color: rgb(5, 4, 4);
+}
+.table td,
+th {
+  padding: 8px;
+  border: black solid 1px;
+  text-align: left;
+}
+.table th {
+  background-color: rgb(19, 211, 19);
+}
+
+.table_Drawer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+}
