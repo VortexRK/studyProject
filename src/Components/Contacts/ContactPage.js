@@ -1,6 +1,5 @@
 import React from "react";
 import GetContacts from "./GetContacts";
-import Header from "../Header/Header";
 import SideDrawer from "../SideDrawer/SideDrawer";
 import BackDrop from "../BackDrop/BackDrop";
 import "./contact.css";
@@ -28,7 +27,6 @@ function ContactPage() {
   }
   return (
     <div>
-      <Header click={visible} />
       <GetContacts contacts={contacts} visible={visible} setContact={setData} />
       {openDrawer}
       {closeDrawer}

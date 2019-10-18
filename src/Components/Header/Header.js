@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 //import Button from "../SideDrawer/Button";
 /*const styles = {
     nav: {
@@ -14,19 +15,13 @@ function Header(props) {
       <div className="spacier" />
       <ul>
         <li>
-          <a href="#" target="_blank">
-            Home
-          </a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="#" target="_blank">
-            Contacts
-          </a>
+          <Link to="/Contacts">Contacts</Link>
         </li>
         <li>
-          <a href="#" target="_blank">
-            Profile
-          </a>
+          <Link to="/ProfilePage">Profile</Link>
         </li>
       </ul>
     </header>
