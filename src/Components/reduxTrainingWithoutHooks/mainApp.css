@@ -1,0 +1,11 @@
+.CarsIMG {
+  width: 40%;
+  height: 35%;
+  float: left;
+  max-width: 600px;
+  max-height: 400px;
+}
+
+.Cars {
+  list-style-type: none;
+}

@@ -23,6 +23,9 @@ function Header(props) {
         <li>
           <Link to="/ProfilePage">Profile</Link>
         </li>
+        <li>
+          <Link to="/Redux">Redux</Link>
+        </li>
       </ul>
     </header>
   );
